@@ -1,0 +1,21 @@
+h2{
+    color: rgb(247, 11, 11);
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+     
+        color:rgb(255, 0, 0);
+    }
+    25%{
+        color:rgb(102, 47, 255);
+    }
+    75%{
+        color:rgb(253, 18, 195);
+    }
+
+    100% {
+    
+        color:greenyellow;
+    }}

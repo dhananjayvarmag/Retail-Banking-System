@@ -1,0 +1,2 @@
+insert into CUSTOMER_ENTITY values('CUSTOMER101','Chennai','1999-02-02','SQJPK1249O','custpassword','customer101');
+insert into CUSTOMER_ENTITY values('CUSTOMER102','Hyd','1999-02-24','CQJPG1248P','custpassword','customer102');

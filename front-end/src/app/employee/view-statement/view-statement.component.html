@@ -1,0 +1,45 @@
+<app-header-work></app-header-work>
+<section>
+    <br>
+    <h2 class="text-center">Account Statement</h2>
+    <br>
+    <div class="container" >
+        <form #f="ngForm">      
+            <div>
+          FROM:  <input type="date" path="from" name="from" placeholder="From date" autocomplete="off" ngModel
+                #from="ngModel" required="required" class="form-control" width="20%" />
+                TO:  <input type="date" path="to" name="to" placeholder="To date" autocomplete="off" ngModel
+                #to="ngModel" required="required" class="form-control" />
+                <br>
+            <input type="submit" name="View" value="Statement" class="btn btn-primary"
+            (click)="rangestmt(from,to)" />
+            <br>
+            <br>
+            <p class="message">{{dateMsg}}</p>
+        </div>
+        </form>
+
+        <br>
+        <table class="table table-bordered" cellpadding="5">    
+            <tr>
+                <th>Transaction ID</th>
+                <th>Source Acc ID</th>
+                <th>Target Acc ID</th>
+                <th>Amount</th>
+                <th>Initiation Date</th>
+                <th>Reference</th>
+                <th>Closing Balance</th>
+            </tr>
+            <tr *ngFor="let transaction of transactions">
+                <td>{{transaction.transactionId}}</td>
+                <td>{{transaction.sourceId}}</td>
+                <td *ngIf="transaction.targetId =='0'">-</td>
+                <td *ngIf="transaction.targetId !='0'">{{transaction.targetId}}</td>          
+                <td>{{transaction.amount}}</td>
+                <td>{{transaction.date}}</td>
+                <td>{{transaction.reference}}</td>
+                <td>{{transaction.sourceBalance}}</td>
+              </tr>
+              </table>
+              </div>
+              </section>
