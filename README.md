@@ -35,5 +35,5 @@ The User Interface is Developed using Angular JS.
 
 Team Size: 4 ( Myself Dhananjay G, Krishna M, Tejas K N, Harish G). We implemented this project as a proof of concept (POC) during our time at Cognizant, with the primary goal of learning Spring Boot and Java API development. This POC allowed us to explore key functionalities of a retail banking system while gaining hands-on experience with backend technologies.
 
-**Language and Frameworks:** Java, Angular, Spring Boot, Spring JPA, Microservices, Maven, Swagger, JWT Authentication
+**Language and Frameworks:** Java, Angular, Spring Boot, Spring JPA, Microservices, Maven, MySQL, Swagger, JWT Authentication
 
